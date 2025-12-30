@@ -33,7 +33,7 @@ Remember: You're here to make TFT more fun and help players improve their game!`
 export const penguAgent = {
   generate: async (messages: Array<{ role: 'user' | 'assistant'; content: string }>) => {
     const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-latest',
+      model: 'claude-sonnet-4-5-20250929',
       max_tokens: 1024,
       system: PENGU_SYSTEM_PROMPT,
       messages: messages.map(msg => ({
