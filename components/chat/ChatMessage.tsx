@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 interface ChatMessageProps {
   role: 'user' | 'assistant';
@@ -23,7 +24,13 @@ export default function ChatMessage({ role, content }: ChatMessageProps) {
             <span>Pengu</span>
           </div>
         )}
-        <div className="whitespace-pre-wrap break-words">{content}</div>
+        <div className="prose prose-sm max-w-none prose-headings:mt-3 prose-headings:mb-2 prose-p:my-1 prose-ul:my-1 prose-li:my-0">
+          {isUser ? (
+            <div className="whitespace-pre-wrap break-words">{content}</div>
+          ) : (
+            <ReactMarkdown>{content}</ReactMarkdown>
+          )}
+        </div>
       </div>
     </div>
   );
