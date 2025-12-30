@@ -30,21 +30,21 @@ export default function ChatContainer({ messages, isLoading }: ChatContainerProp
         <div className="flex flex-col items-center justify-center h-full text-center animate-fade-in">
           <div className="text-8xl mb-6 animate-bounce">🐧</div>
           <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
-            Welcome to Pengu's TFT Chat!
+            ペングーのTFTチャットへようこそ！
           </h2>
           <p className="text-gray-700 max-w-md text-lg leading-relaxed">
-            Squawk! I'm Pengu, your TFT companion! Ask me anything about strategies,
-            team compositions, or the current meta. Let's climb the ranks together! 🏆
+            キュー！僕はペングー、君のTFTの相棒だよ！戦略、
+            チーム編成、今のメタについて何でも聞いてね。一緒にランク上げよう！🏆
           </p>
           <div className="mt-8 flex gap-4 flex-wrap justify-center">
             <span className="px-4 py-2 bg-white rounded-full shadow-sm text-sm text-gray-600">
-              💡 Strategy Tips
+              💡 戦略のコツ
             </span>
             <span className="px-4 py-2 bg-white rounded-full shadow-sm text-sm text-gray-600">
-              🎯 Meta Comps
+              🎯 メタ構成
             </span>
             <span className="px-4 py-2 bg-white rounded-full shadow-sm text-sm text-gray-600">
-              ⚔️ Item Builds
+              ⚔️ アイテムビルド
             </span>
           </div>
         </div>

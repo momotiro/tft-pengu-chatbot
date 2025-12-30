@@ -25,9 +25,9 @@ export default function MessageInput({ onSendMessage, isLoading }: MessageInputP
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Ask Pengu about TFT strategies... 🐧"
+          placeholder="ペングーにTFT戦略について聞いてみよう... 🐧"
           disabled={isLoading}
-          className="flex-1 px-4 py-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all duration-200 shadow-sm"
+          className="flex-1 px-4 py-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed transition-all duration-200 shadow-sm text-gray-900 placeholder:text-gray-400"
         />
         <button
           type="submit"
@@ -37,10 +37,10 @@ export default function MessageInput({ onSendMessage, isLoading }: MessageInputP
           {isLoading ? (
             <span className="flex items-center gap-2">
               <span className="animate-spin">⏳</span>
-              Sending...
+              送信中...
             </span>
           ) : (
-            'Send 🚀'
+            '送信 🚀'
           )}
         </button>
       </div>

@@ -103,15 +103,15 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <span className="text-4xl">🐧</span>
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">Pengu TFT Chat</h1>
-              <p className="text-sm text-gray-600">Your friendly TFT companion</p>
+              <h1 className="text-2xl font-bold text-gray-800">ペングー TFT チャット</h1>
+              <p className="text-sm text-gray-600">あなたのTFT相棒</p>
             </div>
           </div>
           <button
             onClick={handleNewChat}
             className="px-4 py-2 text-sm bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors"
           >
-            New Chat
+            新規チャット
           </button>
         </div>
       </header>
@@ -119,7 +119,7 @@ export default function Home() {
       {/* Error Banner */}
       {error && (
         <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mx-4 mt-4 rounded">
-          <p className="font-bold">Error</p>
+          <p className="font-bold">エラー</p>
           <p>{error}</p>
         </div>
       )}
